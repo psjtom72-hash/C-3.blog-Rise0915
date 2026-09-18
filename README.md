@@ -7,6 +7,7 @@
 - `index.html`: 전체 홈페이지
 - `assets/css/style.css`: 반응형 스타일
 - `assets/js/main.js`: 모바일 메뉴, 스크롤 효과, 문의 폼
+- `assets/img/prestar-logo.png`: 기존 PRESTAR 로고 이미지
 - `services.html`, `about.html`, `contact.html`: 기존 주소를 홈페이지 섹션으로 보내는 안내 페이지
 
 ## 운영 전 확인
