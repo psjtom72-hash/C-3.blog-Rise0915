@@ -1,25 +1,22 @@
 # PRESTAR 회사소개 웹사이트
 
-정적 HTML/CSS/JS 사이트입니다. 빌드 없이 `index.html`을 더블클릭하면 바로 열립니다.
+정적 HTML/CSS/JS로 만든 한 페이지형 회사소개 사이트입니다. 상단 메뉴는 같은 페이지의 서비스, 회사소개, 문의 섹션으로 이동합니다.
 
-## 폴더 구조
-```
-prestar-website/
-├─ index.html        홈 (Hero · 핵심 강점 · 고객 · 진행 절차 · CTA)
-├─ services.html     서비스소개 (사업영역 9가지, 고민→해결 구조)
-├─ about.html        회사소개 (소개 · 강점 · 회사 정보)
-├─ contact.html      문의/상담신청 (폼 + 연락처)
-├─ assets/
-│  ├─ css/style.css  공통 스타일 (남색 계열, 반응형)
-│  ├─ js/main.js     모바일 메뉴 · 스크롤 애니메이션 · 폼 처리
-│  └─ img/           이미지 보관용 (로고 등)
-└─ README.md
-```
+## 파일
 
-## 운영 전 확인할 것
-1. `[내용 확인 후 채워주세요]` 표시 부분 채우기 (대표자, 설립일, 주소, 사업자등록번호, 개인정보 처리방침)
-2. 상담 폼 실제 전송 연동 — 현재는 mailto(메일 앱 열기) 방식. Formspree, EmailJS 등으로 교체 권장 (`assets/js/main.js` 주석 참고)
-3. 로고 이미지가 있으면 `assets/img/`에 넣고 헤더의 `.logo-mark` 교체
+- `index.html`: 전체 홈페이지
+- `assets/css/style.css`: 반응형 스타일
+- `assets/js/main.js`: 모바일 메뉴, 스크롤 효과, 문의 폼
+- `services.html`, `about.html`, `contact.html`: 기존 주소를 홈페이지 섹션으로 보내는 안내 페이지
+
+## 운영 전 확인
+
+문의 폼은 현재 메일 앱을 여는 방식입니다. 실제 자동 접수에는 별도 폼 서비스 연동이 필요합니다.
+대표자, 사업자등록번호, 주소 등 미확인 정보는 홈페이지에서 플레이스홀더로 남겨 두었습니다.
+대표 블로그 글 링크가 확정되면 인사이트 섹션에 추가할 수 있습니다.
 
 ## 배포
-Netlify / Vercel / GitHub Pages / Cloudflare Pages에 폴더를 그대로 업로드하면 됩니다.
+
+GitHub `main` 브랜치에 푸시하면 연결된 Vercel 프로젝트에 배포됩니다.
+운영 주소: https://c-3-blog-rise0915.vercel.app
+`www.prestar.co.kr`의 기존 연결은 유지합니다.

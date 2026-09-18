@@ -11,11 +11,12 @@
     });
   }
 
-  // 현재 페이지 메뉴 활성화
-  const page = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav a[data-page]').forEach(a => {
-    if (a.dataset.page === page) a.classList.add('active');
-  });
+  // 섹션 링크를 누르면 모바일 메뉴를 닫습니다.
+  document.querySelectorAll('.nav a[href^="#"]').forEach(a => a.addEventListener('click', () => {
+    nav?.classList.remove('open');
+    toggle?.classList.remove('open');
+    toggle?.setAttribute('aria-expanded', 'false');
+  }));
 
   // 스크롤 등장 애니메이션
   const els = document.querySelectorAll('.reveal');

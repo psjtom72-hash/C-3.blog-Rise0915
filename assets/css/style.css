@@ -169,3 +169,7 @@ img{max-width:100%;display:block}
   .info-table td{padding:14px}
   .float-call{display:inline-flex}
 }
+
+section[id]{scroll-margin-top:72px}
+.services-grid{margin-top:44px}
+@media(max-width:768px){.nav:not(.open){visibility:hidden;pointer-events:none}.nav.open{visibility:visible;pointer-events:auto}}
